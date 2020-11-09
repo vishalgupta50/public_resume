@@ -1,0 +1,205 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Vishal Gupta} \\ \vspace{1pt}
+    \small +91 7019725607 $|$ \href{mailto:vishalguptasnwl@gmail.com}{\underline{vishalguptasnwl@gmail.com}} $|$
+    \href{https://linkedin.com/in/vishal-gupta-09886599}{\underline{linkedin.com/in/vishal-gupta-09886599}} $|$
+    \href{https://github.com/vishalguptasnwl}{\underline{github.com/vishalguptasnwl}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {RNS Institute of Technology}{Bengaluru, Karnataka}
+      {Bachelor of Engineering in Computer Science}
+      {Apr. 2013 -- May 2017}
+    \resumeSubheading
+      {DAV Public School}{Bokaro, Jharkhand}
+      {12th PCM}{Mar. 2011 -- Mar 2013}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Test Associate Senior Engineer(Python Automation)}{Oct 2018 -- Present}
+      {SonicWall India Pvt Ltd}{Bengaluru, Karnataka}
+      \resumeItemListStart
+      \item[] \textbf{{Email Security} {(Oct 2018 - Present)}}
+        \resumeItem{Designed and developed Python REST API automation framework, using unittest, built on the design of "Library Architecture Testing", with advantages of code reusability, scalability and low-cost maintenance.}
+        \resumeItem{Worked on architecture and moving Email Security integrated server CASS(Comprehensive Anti Spam Service) from self-maintenance servers to AWS.}
+        \resumeItem{Worked on performance analysis of Email Security product using IXIA traffic generator tool by taking time several parameters and identifying bottlenecks.}
+      \resumeItemListEnd
+      
+       \resumeItemListStart
+      \item[] \textbf{{NSM: Network Security Manager} {(Feb 2020 - Nov 2020)}}
+        \resumeItem{Worked on REST-API Automation, Optimization of scripts and part of the framework development team developed on python. Provided ideas for optimizing the framework to reduce code.}
+        \resumeItem{Automated multiple features using API from smoke to regression which helped the application to manage multiple firewalls at several location seamlessly.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Associate Software Engineer}{Mar. 2018 -- Jun, 2018}
+      {Accenture Technology Pvt Ltd}{Bengaluru, Karnataka}
+      \resumeItemListStart
+        \resumeItem{Developed prototype models on solution of Industrial IoT.}
+        \resumeItem{Part of 15 selected engineers for the digital training team from India and got training on IoT technologies. Learned various technologies related to IoT.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL , HTML/CSS} \\
+     \textbf{Cloud}{: AWS(ec2, load-balancing, Network Configuration), Azure(Active Directory)} \\
+     \textbf{Tools}{: Perforce, Git, Wireshark, Swagger UI, Postman, IXIA, JIRA} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}\\
+     \textbf{Protocols}{: UDP, TCP, IPV4, IPV6, HTTP, DHCP, SMTP, SNMP, IMAP, POP3, TLS, SSL, ICMP, LDAP, DNS, FTP} \\
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application using with Flask serving a REST API}
+            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+            \resumeItem{Visualized GitHub data to show collaboration}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------AWARDS AND CERTIFICATIONS-----------
+\section{Awards and Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+  \item{* Awarded for “2019-Key-Contributor(Email Security)” at Sonicwall Technology Systems, Bengaluru, India.}\\
+   {* National Programme on Technology Enhanced Learning (NPTEL) online certification in “Information Security -3” by 
+Indian Institute of Technology-Madras. (an initiative by Ministry of Human Resources and Development (MHRD), India).}\\{* Participated in the “Game Development Workshop” held at the Indian Institute of Science.}
+ \end{itemize}
+%-------------------------------------------
+\end{document}
